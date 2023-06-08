@@ -19,6 +19,7 @@ builder.Services.AddDbContext<PrestamoDbContext>(options =>
 builder.Services.AddScoped<IMarcaRepository, MarcaRepository>();
 builder.Services.AddScoped<IEquipoRepository, EquipoRepository>();
 builder.Services.AddScoped<IPrestamoRepository, PrestamoRepository>();
+builder.Services.AddScoped<ExcelService>();
 
 var app = builder.Build();
 
@@ -40,5 +41,15 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+        name: "exportExcelMarca",
+        pattern: "marca/export-excel",
+        defaults: new { controller = "Marca", action = "ExportToExcel" });
+
+app.MapControllerRoute(
+    name: "exportExcelEquipo",
+    pattern: "equipo/export-excel",
+    defaults: new { controller = "Equipo", action = "ExportToExcel" });
 
 app.Run();

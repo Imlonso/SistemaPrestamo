@@ -119,5 +119,17 @@ namespace SistemaPrestamos.Controllers
             await marcaRepository.Delete(marca);
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult ExportToExcel()
+        {
+            var marcas = marcaRepository.GetAll().Result;
+
+            // Genera el reporte de Excel utilizando el servicio ExcelService
+            var excelService = new ExcelService();
+            var excelBytes = excelService.GenerateExcel(marcas);
+
+            // Devuelve el reporte de Excel como un archivo descargable
+            return File(excelBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "reporte_marcas.xlsx");
+        }
     }
 }

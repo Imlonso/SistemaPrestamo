@@ -166,5 +166,16 @@ namespace SistemaPrestamos.Controllers
             await equipoRepository.Delete(equipo);
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult ExportToExcel()
+        {
+            var equipos = equipoRepository.GetAll().Result;
+
+            // Genera el reporte de Excel utilizando el servicio ExcelService
+            var excelService = new ExcelService();
+            var excelBytes = excelService.GenerateExcel(equipos);
+
+
+            return File(excelBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "reporte_equipos.xlsx");
+        }
     }
 }

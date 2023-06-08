@@ -104,5 +104,7 @@ namespace SistemaPrestamos.Controllers
             await prestamoRepository.Delete(prestamo);
             return RedirectToAction(nameof(Index));
         }
+
+
     }
 }
