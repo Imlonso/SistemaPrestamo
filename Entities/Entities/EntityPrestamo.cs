@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities
+namespace Entities.Entities
 {
     public class EntityPrestamo
     {
@@ -29,5 +29,5 @@ namespace Entities
 
 
     }
-    
+
 }

@@ -1,8 +1,13 @@
+using Business.Implementations;
+using Business.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<IMarcaRepository, MarcaRepository>();
+builder.Services.AddScoped<IEquipoRepository, EquipoRepository>();
+builder.Services.AddScoped<IPrestamoRepository, PrestamoRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

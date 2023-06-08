@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities
+namespace Entities.Entities
 {
-    public  class EntityMarca
+    public class EntityMarca
     {
         [Key]
         public int IdMarca { get; set; }
@@ -21,9 +21,9 @@ namespace Entities
         [Column(TypeName = "decimal(18,2)")]
         public decimal Exactitud { get; set; }
 
-        
-        public virtual ICollection<EntityPrestamo>? Prestamos { get; set;}
-        public virtual ICollection<EntityEquipo>? Equipo { get; set; }     
+
+        public virtual ICollection<EntityPrestamo>? Prestamos { get; set; }
+        public virtual ICollection<EntityEquipo>? Equipo { get; set; }
 
     }
 

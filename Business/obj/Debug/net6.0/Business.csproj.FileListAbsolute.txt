@@ -2,11 +2,16 @@ C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\bin\Debug\net6.0\Bus
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\bin\Debug\net6.0\Business.runtimeconfig.json
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\bin\Debug\net6.0\Business.dll
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\bin\Debug\net6.0\Business.pdb
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\bin\Debug\net6.0\Data.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\bin\Debug\net6.0\Entities.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\bin\Debug\net6.0\Data.pdb
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\bin\Debug\net6.0\Entities.pdb
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\Business.csproj.CopyComplete
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\Business.dll
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\refint\Business.dll
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\Business\obj\Debug\net6.0\Business.pdb
