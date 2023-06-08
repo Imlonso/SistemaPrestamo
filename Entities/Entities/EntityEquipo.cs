@@ -21,7 +21,6 @@ namespace Entities.Entities
         public int IdMarca { get; set; }
         public EntityMarca? Marca { get; set; }
 
-        public virtual EntityPrestamo? Prestamo { get; set; }
 
     }
 }
