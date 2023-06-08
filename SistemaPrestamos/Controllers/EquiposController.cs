@@ -2,22 +2,43 @@
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using System.Linq;
+using Business.Implementations;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace SistemaPrestamos.Controllers
 {
     public class EquiposController : Controller
     {
         private readonly IEquipoRepository equipoRepository;
+        private readonly IMarcaRepository marcaRepository;
 
-        public EquiposController(IEquipoRepository equipoRepository)
+        public EquiposController(IEquipoRepository equipoRepository, IMarcaRepository marcaRepository)
         {
             this.equipoRepository = equipoRepository;
+            this.marcaRepository = marcaRepository;
         }
 
         // GET: EntityEquipo
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string marca, string search)
         {
             var equipos = await equipoRepository.GetAll();
+            var marcas = await marcaRepository.GetAll();
+
+            ViewBag.Marcas = marcas;
+
+            if (!string.IsNullOrEmpty(marca))
+            {
+                equipos = equipos.Where(e => e.Marca.Marca == marca).ToList();
+            }
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                equipos = equipos.Where(e => e.Nombre.Contains(search, StringComparison.OrdinalIgnoreCase)
+                                        || e.NumeroSerie.Contains(search, StringComparison.OrdinalIgnoreCase))
+                                .ToList();
+            }
+
             return View(equipos);
         }
 
@@ -25,31 +46,66 @@ namespace SistemaPrestamos.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var equipo = await equipoRepository.GetById(id);
+
             if (equipo == null)
             {
                 return NotFound();
             }
+
+            equipo.Marca = await marcaRepository.GetById(equipo.IdMarca);
+
             return View(equipo);
         }
 
+
         // GET: EntityEquipo/Create
-        public IActionResult Create()
+        [HttpGet]
+        public async Task<IActionResult> Create()
         {
+            var marcas = await marcaRepository.GetAll();
+            ViewBag.Marcas = new SelectList(marcas, "IdMarca", "Marca");
             return View();
         }
 
-        // POST: EntityEquipo/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(EntityEquipo equipo)
+        public async Task<IActionResult> Create(EntityEquipo equipo, int IdMarca)
         {
             if (ModelState.IsValid)
             {
-                await equipoRepository.Add(equipo);
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    // Obtener la marca seleccionada
+                    var marca = await marcaRepository.GetById(IdMarca);
+                    if (marca == null)
+                    {
+                        return NotFound(); // Manejar el caso cuando la marca no existe
+                    }
+
+                    // Asignar la marca al equipo
+                    equipo.Marca = marca;
+
+                    // Guardar el equipo en la base de datos
+                    await equipoRepository.Add(equipo);
+
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    // Manejar cualquier error de guardado
+                    // Puedes agregar aquí la lógica de manejo de errores que desees
+                    return View(equipo);
+                }
             }
+
+            var marcas = await marcaRepository.GetAll();
+            ViewBag.Marcas = new SelectList(marcas, "IdMarca", "Marca", equipo.IdMarca);
+
             return View(equipo);
         }
+
+
+
 
         // GET: EntityEquipo/Edit/5
         public async Task<IActionResult> Edit(int id)
@@ -64,21 +120,26 @@ namespace SistemaPrestamos.Controllers
 
         // POST: EntityEquipo/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, EntityEquipo equipo)
         {
-            if (id != equipo.IdEquipo)
+            var existingEquipo = await equipoRepository.GetById(id);
+            if (existingEquipo == null)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                await equipoRepository.Update(equipo);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(equipo);
+            // Copiar los valores actualizados al existingEquipo
+            existingEquipo.NumeroSerie = equipo.NumeroSerie;
+            existingEquipo.Nombre = equipo.Nombre;
+            existingEquipo.Descripcion = equipo.Descripcion;
+            // ...
+
+            await equipoRepository.Update(existingEquipo);
+
+            return RedirectToAction("Index");
         }
+
+
 
         // GET: EntityEquipo/Delete/5
         public async Task<IActionResult> Delete(int id)
