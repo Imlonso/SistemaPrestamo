@@ -16,12 +16,68 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Equipos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Equipos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Equipos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Equipos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Marca/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Marca/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Marca/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Marca/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Marca/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Prestamos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Prestamos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Prestamos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Prestamos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Prestamos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Besco/OneDrive/Escritorio/SistemaPrestamo/SistemaPrestamos/Views/Shared/Error.cshtml]

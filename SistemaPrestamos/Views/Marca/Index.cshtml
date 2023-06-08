@@ -1,0 +1,53 @@
+﻿@model List<Entities.Entities.EntityMarca>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>EntityMarca Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-action="Index" method="get">
+    <div class="form-group">
+        <label for="tipo">Tipo:</label>
+        <select name="tipo" id="tipo" class="form-control">
+            <option value="">All</option>
+            <option value="TodosLosTipos">Todos los tipos</option>
+            <option value="Registradores">Registradores</option>
+            <option value="Pinzas">Pinzas</option>
+            <option value="Cableado">Cableado</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Filter</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Descripción</th>
+            <th>Tipo</th>
+            <th>Exactitud</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Marca</td>
+                <td>@item.Descripcion</td>
+                <td>@item.Tipo</td>
+                <td>@item.Exactitud</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdMarca">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdMarca">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdMarca">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

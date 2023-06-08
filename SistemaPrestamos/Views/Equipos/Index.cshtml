@@ -1,0 +1,40 @@
+﻿@model List<Entities.Entities.EntityEquipo> // (cambia según la entidad correspondiente)
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Número de Serie</th>
+            <th>Descripción</th>
+            <!-- Agrega las columnas adicionales según la entidad correspondiente -->
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdEquipo</td>
+                <td>@item.Nombre</td>
+                <td>@item.NumeroSerie</td>
+                <td>@item.Descripcion</td>
+                <!-- Agrega las columnas adicionales según la entidad correspondiente -->
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.IdEquipo">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@item.IdEquipo">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdEquipo">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
