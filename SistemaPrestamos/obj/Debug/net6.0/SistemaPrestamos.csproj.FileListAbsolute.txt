@@ -66,3 +66,13 @@ C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\obj\Debug\ne
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\obj\Debug\net6.0\SistemaPrestamos.pdb
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\obj\Debug\net6.0\SistemaPrestamos.genruntimeconfig.cache
 C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\obj\Debug\net6.0\ref\SistemaPrestamos.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Business.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Data.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Entities.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Business.pdb
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Data.pdb
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Entities.pdb
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Besco\OneDrive\Escritorio\SistemaPrestamo\SistemaPrestamos\bin\Debug\net6.0\FluentAssertions.dll

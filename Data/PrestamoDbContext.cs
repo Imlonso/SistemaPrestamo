@@ -1,10 +1,13 @@
 ﻿using Entities.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+
 
 namespace Data
 {
@@ -15,11 +18,19 @@ namespace Data
         public DbSet<EntityEquipo>? Equipo { get; set;}
 
         //Conexion a la base de datos
+        private readonly IConfiguration configuration;
+
+        public PrestamoDbContext(IConfiguration configuration)
+        {
+            this.configuration = configuration;
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server= IMLONSO\\LONSOSQL ; Database=DbPrestamo; User Id=sa; Password= alonso1699");
+                string connectionString = configuration.GetConnectionString("DefaultConnection");
+                optionsBuilder.UseSqlServer(connectionString);
             }
         }
 
