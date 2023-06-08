@@ -9,7 +9,7 @@
 <p>
     <a class="btn btn-primary" asp-action="Create">Crear Nuevo</a>
 
-    <a href="@Url.Action("ExportToExcel", "Equipo")" class="btn btn-primary">Descargar Excel</a>
+    <a href="@Url.Action("ExportToExcel", "Equipos")" class="btn btn-primary">Descargar Excel</a>
 </p>
 
 <form asp-action="Index" method="get">
@@ -37,7 +37,6 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Id</th>
             <th>Nombre</th>
             <th>Número de Serie</th>
             <th>Descripción</th>
@@ -49,7 +48,6 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.IdEquipo</td>
                 <td>@item.Nombre</td>
                 <td>@item.NumeroSerie</td>
                 <td>@item.Descripcion</td>

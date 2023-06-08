@@ -49,7 +49,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "exportExcelEquipo",
-    pattern: "equipo/export-excel",
-    defaults: new { controller = "Equipo", action = "ExportToExcel" });
+    pattern: "equipos/export-excel",
+    defaults: new { controller = "Equipos", action = "ExportToExcel" });
 
 app.Run();
