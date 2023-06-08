@@ -9,5 +9,6 @@ namespace Business.Interfaces
 {
     public interface IPrestamoRepository : IBaseRepository<EntityPrestamo>
     {
+
     }
 }

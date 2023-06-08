@@ -4,6 +4,7 @@ using Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(PrestamoDbContext))]
-    partial class PrestamoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230608202044_4thdmigrtion")]
+    partial class _4thdmigrtion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,7 +48,7 @@ namespace Data.Migrations
 
                     b.HasIndex("IdMarca");
 
-                    b.ToTable("Equipo", (string)null);
+                    b.ToTable("Equipo");
                 });
 
             modelBuilder.Entity("Entities.Entities.EntityMarca", b =>
@@ -72,7 +74,7 @@ namespace Data.Migrations
 
                     b.HasKey("IdMarca");
 
-                    b.ToTable("Marcas", (string)null);
+                    b.ToTable("Marcas");
                 });
 
             modelBuilder.Entity("Entities.Entities.EntityPrestamo", b =>
@@ -103,7 +105,7 @@ namespace Data.Migrations
 
                     b.HasIndex("IdMarca");
 
-                    b.ToTable("Prestamo", (string)null);
+                    b.ToTable("Prestamo");
                 });
 
             modelBuilder.Entity("Entities.Entities.EntityEquipo", b =>

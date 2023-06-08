@@ -12,11 +12,13 @@ namespace SistemaPrestamos.Controllers
     {
         private readonly IEquipoRepository equipoRepository;
         private readonly IMarcaRepository marcaRepository;
+        private readonly IPrestamoRepository prestamoRepository;
 
-        public EquiposController(IEquipoRepository equipoRepository, IMarcaRepository marcaRepository)
+        public EquiposController(IEquipoRepository equipoRepository, IMarcaRepository marcaRepository, IPrestamoRepository prestamoRepository)
         {
             this.equipoRepository = equipoRepository;
             this.marcaRepository = marcaRepository;
+            this.prestamoRepository = prestamoRepository;
         }
 
         // GET: EntityEquipo

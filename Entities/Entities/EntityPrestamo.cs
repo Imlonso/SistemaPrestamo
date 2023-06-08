@@ -18,7 +18,7 @@ namespace Entities.Entities
 
         public DateTime? FechaInicio { get; set; }
         public DateTime? FechaFin { get; set; }
-        public bool EstadoPrestamo { get; set; }
+        public bool EstadoPrestamo { get; set; } = false;
 
 
 

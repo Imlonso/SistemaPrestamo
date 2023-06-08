@@ -19,7 +19,7 @@ namespace Entities.Entities
 
         [ForeignKey(nameof(Marca))]
         public int IdMarca { get; set; }
-        public EntityMarca? Marca { get; set; }
+        public EntityMarca Marca { get; set; }
 
 
     }

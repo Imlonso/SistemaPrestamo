@@ -25,6 +25,10 @@ namespace Data
             this.configuration = configuration;
         }
 
+        public PrestamoDbContext()
+        {
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
