@@ -19,7 +19,7 @@ namespace Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server= IMLONSO\\\\LONSOSQL ; Database=DbPrestamos; User Id=sa; Password= alonso1699 \"");
+                optionsBuilder.UseSqlServer("Server= IMLONSO\\LONSOSQL ; Database=DbPrestamo; User Id=sa; Password= alonso1699");
             }
         }
 
