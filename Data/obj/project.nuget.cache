@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HrQ/pdgSxpEkjRDqP4mKQMyXMVoN8446ZmgNugbEaMkKcVCT0+HVShLrBmqDly4MMrRGEhdY+uhYJq7LhvjRGw==",
+  "dgSpecHash": "nshvqetyUAyIDP1lKywUEr3jlKcJMV14j6Acv3owp5X+dNlgo3HEhdDxq9gnX5dkGqDUJhSHAPbpMc9xGHUB6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\SistemaPrestamos.csproj",
+  "projectFilePath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Besco\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Besco\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

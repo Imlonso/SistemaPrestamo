@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\SistemaPrestamos.csproj": {}
+    "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\SistemaPrestamos.csproj": {
+    "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\SistemaPrestamos.csproj",
-        "projectName": "SistemaPrestamos",
-        "projectPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\SistemaPrestamos.csproj",
+        "projectUniqueName": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Besco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\obj\\",
+        "outputPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Besco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,9 +67,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

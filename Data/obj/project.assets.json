@@ -782,6 +782,20 @@
             "rid": "win"
           }
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.16",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.16"
+        },
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
       }
     }
   },
@@ -2003,10 +2017,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.16",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.16",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.16"
@@ -2018,11 +2038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\SistemaPrestamos.csproj",
-      "projectName": "SistemaPrestamos",
-      "projectPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\SistemaPrestamos.csproj",
+      "projectUniqueName": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Data\\Data.csproj",
+      "projectName": "Data",
+      "projectPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Besco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\SistemaPrestamos\\obj\\",
+      "outputPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Besco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2038,7 +2058,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Besco\\OneDrive\\Escritorio\\SistemaPrestamo\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2078,9 +2102,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
