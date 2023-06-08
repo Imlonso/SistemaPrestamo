@@ -26,9 +26,6 @@ namespace Entities.Entities
         public int IdMarca { get; set; }
         public EntityMarca? Marca { get; set; }
 
-        [ForeignKey(nameof(Equipo))]
-        public int IdEuipo { get; set; }
-        public EntityEquipo? Equipo { get; set; }
 
 
 
